@@ -5,7 +5,9 @@
   title = "Jazz Chord Tones Training in 12 Keys"
   composer = "TUT Jazz Club 2026"
 }
+
 \markup {
+  \box 注釈
   "いくつかの臨時記号は省略しています。たとえばFbはE, EbbはDなどです。"
 }
 
@@ -13,9 +15,13 @@
   "オクターブはC4付近を基準にしています。楽器の音域に合わせて変更してください。"
 }
 
+\markup {
+  "このPDFの出力スクリプトは https://github.com/8gau8/JazzBasicTraining にあります。"
+}
+
 \score {
   \header {
-    piece = \markup \box "Basic Chords in C"
+    piece = \markup \box "Basic Chords in C" 
   }
 
   <<

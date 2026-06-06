@@ -1,4 +1,5 @@
 *.pdf
+!basic-training.pdf
 
 # General
 .DS_Store
