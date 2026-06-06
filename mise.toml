@@ -3,7 +3,10 @@
 description = "Generate sheet music from base.ly using LilyPond in a Docker container."
 alias = ["gs"]
 depends = ["build-image"]
-run = ['docker run --rm -v "$(pwd):/app" -w /app lilypond-jp lilypond basic-training.ly']
+run = [
+    'docker run --rm -v "$(pwd):/app" -w /app lilypond-jp lilypond basic-training.ly',
+    'mv *.pdf sheet-music/'
+]
 
 [tasks.build-image]
 description = "Build the Docker image for LilyPond."
