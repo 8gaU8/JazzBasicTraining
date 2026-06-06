@@ -19,6 +19,10 @@
   "このPDFの出力スクリプトは https://github.com/8gau8/JazzBasicTraining にあります。"
 }
 
+\markup {
+  "間違いがありましたら連絡ください。"
+}
+
 \score {
   \header {
     piece = \markup \box "Basic Chords in C" 
@@ -218,11 +222,13 @@
         f4 aes4 c4 ees4
         bes,4 des4 f4 aes4 
         ees4 ges4 bes4 des4
+        \break
 
         aes4 ces4 ees4 ges4
         des,4 fes4 aes4 b4
         ges4 a4 des4 e4
         b,4 d4 fis4 a4
+        \break
 
         e4 g4 b4 d4
         a4 c4 e4 g4
@@ -253,11 +259,13 @@
         f4 aes4 ces4 ees4
         bes,4 des4 e4 aes4 
         ees4 ges4 a4 des4
+        \break
 
         aes4 b4 d4 ges4
         des,4 e4 g4 b4
         ges4 a4 c4 e4
         b,4 d4 f4 a4
+        \break
 
         e4 g4 bes4 d4
         a4 c4 ees4 g4
