@@ -1,0 +1,26 @@
+
+[tasks.generate-sheet]
+description = "Generate sheet music from base.ly using LilyPond in a Docker container."
+alias = ["gs"]
+depends = ["build-image"]
+run = ['docker run --rm -v "$(pwd):/app" -w /app lilypond-jp lilypond base.ly']
+
+[tasks.build-image]
+description = "Build the Docker image for LilyPond."
+alias = ["bi"]
+run = ['docker build -t lilypond-jp .']
+
+[tasks.watch-and-generate]
+description = "Watch for changes in .ly files and regenerate the sheet music automatically."
+alias = ["wg"]
+run = ['mise watch generate-sheet --filter *.ly']
+
+
+[tasks.clean]
+description = "Clean up generated files."
+alias = ["c"]
+run = ['rm -f base.pdf']
+
+[tools]
+python = "3.10"
+watchexec = "latest"
