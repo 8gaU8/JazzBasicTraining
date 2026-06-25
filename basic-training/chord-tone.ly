@@ -16,7 +16,7 @@
 }
 
 \markup {
-  "このPDFの出力スクリプトは https://github.com/8gau8/JazzBasicTraining にあります。"
+  "このPDFの出力スクリプトは https://github.com/8gaU8/jazz-sheet-music にあります。"
 }
 
 \markup {
